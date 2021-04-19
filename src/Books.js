@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SearchArea from './SearchArea';
 import request from 'superagent';
  import BookList from './BookList';
+ import DarkMode from'./DarkMode';
 
 
 
@@ -65,6 +66,7 @@ class Books extends Component{
       <div>
        <SearchArea  searchBook={this.searchBook} handleSearch={this.handleSearch} handleSort={this.handleSort}/>
         <BookList books={SortedBooks}/> 
+        <DarkMode/>
       </div>
     );
   }
